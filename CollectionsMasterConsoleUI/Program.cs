@@ -136,7 +136,7 @@ namespace CollectionsMasterConsoleUI
 
         private static void OddKiller(List<int> numberList)
         {
-            for (int i = 1; i < numberList.Count; i++)
+            for (int i = numberList.Count - 1; i >= 0; i--)
                 if (numberList[i] % 2 != 0)
                 {
                     numberList.RemoveAt(i);   
